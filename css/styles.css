@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+body {
+	color:#FFF;
+	font-family: 'Roboto Mono', monospace;
+	height:100%;
+	width:100%;
+	margin:0;
+	background: #000000;
+}
+.ie body {
+	filter: dropshadow(color=#000000, offx=0, offy=1);
+}
+h1 {
+	font-size:68px;
+	/* letter-spacing:-2px; */
+	text-align:center;
+	padding-top:30px;
+	font-weight: 400;
+	font-family: 'Audiowide', cursive;
+	text-shadow: 0px 1px 1px rgba(12, 11, 11, 0.56);
+}
+.ie h1 {
+	filter: dropshadow(color=#000000, offx=0, offy=3);
+	padding-bottom:12px;
+}
+.ie h2 {
+	filter: dropshadow(color=#000000, offx=0, offy=3);
+}
+p, pre {
+	margin:0 0 10px 0;
+}
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 0;
+	position: absolute;
+	height: 100% !important;
+	bottom: 0px;
+}
+
+.large-header {
+	background-image: url('../img/bg.jpg');
+}
+
+code {
+	text-transform:uppercase !important;
+	color:#EEE;
+	border-bottom:1px dotted #666;
+}
+a {
+	color: #7b7b7b;
+	text-decoration:none;
+}
+a:hover {
+	color:#E3ECFF;
+}
+a.logo{
+	color: #FFF;
+	float: right;
+}
+#header {margin-bottom: 62px;position: relative;width: 100%;height: 82px;line-height: 82px;z-index: 1;}
+.wrapper {margin: 0 auto;position: relative;z-index: 1;width: 1170px;text-align: right;}
+
+#Content h2 {display: block;margin: 20px 0;padding: 0px;text-align: right;font-size: 20px;font-weight: 400;color: #fff;line-height: 42px;}
+
+.intro{
+font-size:22px;
+font-weight:normal;
+margin-bottom:30px;
+}
+.top-wrapper{
+	width:100%;
+	padding: 0;
+	/* background: #EC253F; */
+	float: left;
+}
+.bottom-wrapper{
+	/* width: 90%; */
+	padding: 34px 0;
+	/* background:#fff; */
+	float: left;
+}
+@media(max-width:998px){
+		body {
+	min-width: initial !important;
+	}
+	#header {
+    /* margin-bottom: 78px; */
+    position: relative;
+    width: 100%;
+    /* height: 45px; */
+    /* line-height: 35px; */
+    z-index: 1;
+}
+	.wrapper{width: 90%;}
+
+}
+@media(max-width:768px){
+	body {
+	min-width: initial !important;
+	}
+	.wrapper{width: 90%;}
+
+	#Content h2 {
+		display: block;
+		margin: 0px 0 29px;
+		padding: 0px;
+		/* text-align: center; */
+		font-size: 21px;
+		font-weight: 300;
+	}
+}
+@media(max-width:420px){
+h1{
+adding-top: 16px;
+}
+#header {
+    margin-bottom: 30px;
+}
+}
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+		.wrapper{
+		   width:100%;
+			margin:0 15px;
+		}
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+		.wrapper{
+			width:1170px;
+			margin: 0 auto;
+		}
+    }
